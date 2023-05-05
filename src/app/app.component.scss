@@ -17,6 +17,14 @@
     .body-card {
         padding: 30px;
         padding-top: 0px;
+        border-bottom: groove;
+        border-color: #171313;
+    }
+
+    .body-card:hover {
+        box-shadow: 0 8px 8px 8px rgba(0, 0, 0, .2), 0 8px 8px 0 rgba(0, 0, 0, .14), 0 8px 8px 0 rgba(0, 0, 0, .12) !important;
+        transform: translate3d(0, 0, 0);
+        transition: background .4s cubic-bezier(.25, .8, .25, 1), box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
     }
 
     .form-body {
@@ -51,24 +59,35 @@
         border-radius: 30px;
     }
 
+
     button {
-        background: linear-gradient(-45deg, #dee5e5, #496aa7, #2623d5, #7923d5);
-        background-size: 600% 600%;
+        margin: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        background: linear-gradient(-55deg, #E6F9AF, #8BBEB2,#384E77,#18314F);
+        background-size: 400% 400%;
         animation: gradient 10s ease infinite;
     }
 
     button.gradient {}
 
     .result {
-            margin-top: 50px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .result-card{
+    .result:hover {
+        border-radius: 30px;
+        box-shadow: 0 8px 8px 8px rgba(0, 0, 0, .2), 0 8px 8px 0 rgba(0, 0, 0, .14), 0 8px 8px 0 rgba(0, 0, 0, .12) !important;
+        transform: translate3d(0, 0, 0);
+        transition: background .4s cubic-bezier(.25, .8, .25, 1), box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .result-card {
         padding: 10px;
     }
+
     .header {
         width: 100%;
     }
@@ -86,6 +105,7 @@
         25% {
             background-position: 75% 50%;
         }
+
         50% {
             background-position: 100% 50%;
         }

@@ -1,25 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;    background: linear-gradient(-45deg, #dee5e5, #496aa7, #2623d5, #7923d5);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite; }
-body.gradient{
-
+html,
+body {
+    height: 100%;
 }
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(-55deg, #E6F9AF, #8BBEB2,#384E77,#18314F);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+body.gradient {}
+
 .mat-mdc-text-field-wrapper {
     border-radius: 28px !important;
     border-bottom: groove;
-  }
+}
+
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 75% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 75% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
